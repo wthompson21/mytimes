@@ -12,6 +12,10 @@ header {
   font-weight: bold;
 }
 
+div {
+  border: 1px solid black;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -40,4 +44,47 @@ header {
 
 .nav a {
   color: black;
+}
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.lead-story {
+
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-content {
+
+}
+
+.cookie {
+  height: 240px;
+  width: 240px;
 }
