@@ -12,10 +12,6 @@ header {
   font-weight: bold;
 }
 
-div {
-  border: 1px solid black;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -33,17 +29,25 @@ div {
     color: MediumAquamarine;
 }
 
-.nav {
+nav {
   display: inline-flex;
   padding-right: 30px;
 }
 
-.nav span {
+nav span {
   display: inline-block;
+  padding: 20px 10px;
 }
 
-.nav a {
+a {
   color: black;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .content {
@@ -71,20 +75,127 @@ div {
   width: 240px;
 }
 
-.lead-story {
+.stories {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+  margin-top: 17px;
+}
 
+.stories .text-content {
+  height: 250px;
 }
 
 .story {
   display: flex;
   flex-direction: column;
+  width: 300px;
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.lead-story .image-content {
+  background-image: URL(./images/img-story-main.png);
+  font-size: 40px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.earth.image-content {
+  background-image: URL(./images/img-story-2.png);
+}
+
+.cameras.image-content {
+  background-image: URL(./images/img-story-3.png);
+}
+
+.cats.image-content {
+  background-image: URL(./images/img-story-1.png);
 }
 
 .image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
 
+.image-content span {
+  display: flex;
 }
 
 .cookie {
   height: 240px;
   width: 240px;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.bite {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+  color: DimGray;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .info {
+  display: block;
+}
+
+footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+footer .copyright {
+  display: block;
 }
